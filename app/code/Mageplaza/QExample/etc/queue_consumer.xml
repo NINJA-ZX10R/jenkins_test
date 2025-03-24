@@ -1,0 +1,10 @@
+<?xml version="1.0"?> 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+
+    <consumer name="AmCustomerClean" 
+              queue="customer_clean" 
+              connection="amqp"
+              handler="Mageplaza\QExample\Model\Customer\DeleteConsumer::processMessage"
+              maxMessages="1"/>
+
+</config>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?> 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="am.customer.delete" type="topic" connection="amqp">
+        <binding id="AmCustomerClean" topic="customer.clean" destinationType="queue" destination="customer_clean"/>
+    </exchange>
+</config>
