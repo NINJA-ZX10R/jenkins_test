@@ -1,0 +1,20 @@
+{
+    "name": "mageplaza/qexample",
+    "description": "My Custom Module for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "Mageplaza\\QExample\\": ""
+      }
+    },
+    "require": {
+      "php": ">=7.4",
+      "magento/framework": "*"
+    }
+  }
+  
