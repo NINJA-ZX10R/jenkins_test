@@ -1,5 +1,5 @@
 {
-    "name": "topvalue/module-erpintegration",
+    "name": "mageplaza/qexample",
     "description": "Sync order to erp using queue",
     "type": "magento2-module",
     "license": "proprietary",
@@ -10,13 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
     "autoload": {
         "files": [
             "registration.php"
         ],
         "psr-4": {
-            "Topvalue\\ErpIntegration\\": ""
+            "Mageplaza\\QExample\\": ""
         }
+    },
+    "require": {
+      "php": ">=7.4",
+      "magento/framework": "*"
     }
 }
+  
